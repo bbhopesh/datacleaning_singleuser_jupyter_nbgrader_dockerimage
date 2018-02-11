@@ -6,6 +6,6 @@ export ADMIN_INSTRUCTOR_UID=901209
 export INSTRUCTOR_GID=10000
 export INSTRUCTOR_GROUP=dc_instructors
 # Instructors
-export INSTRUCTORS_LIST=bbassi2,csevans2,ludaesch
+export INSTRUCTORS_LIST=bbassi2,csevans2,ludaesch,yiyunyc2
 
 
