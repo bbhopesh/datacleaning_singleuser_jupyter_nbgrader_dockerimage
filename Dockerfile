@@ -12,7 +12,12 @@ RUN /opt/conda/bin/conda install six
 RUN /opt/conda/bin/conda install pgspecial
 #RUN /opt/conda/bin/conda install ipython-genutils
 
+
 USER root
+
+# Install acl tool
+RUN apt-get update 
+RUN apt-get install -y acl
 
 COPY ./bin/start-custom.sh /usr/local/bin
 COPY ./bin/start-singleuser-custom.sh /usr/local/bin
