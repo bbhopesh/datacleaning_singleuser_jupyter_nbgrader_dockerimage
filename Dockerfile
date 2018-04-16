@@ -12,6 +12,8 @@ RUN /opt/conda/bin/conda install six
 RUN /opt/conda/bin/conda install pgspecial
 #RUN /opt/conda/bin/conda install ipython-genutils
 
+# Install R packages.
+RUN R -e "install.packages('refinr', dependencies=TRUE, repos='http://cran.us.r-project.org')"
 
 USER root
 
